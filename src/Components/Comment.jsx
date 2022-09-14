@@ -11,6 +11,9 @@ export function Comment({ content, onDeleteComment }) {
         onDeleteComment(content);
     }
 
+    //Quando for necessário atualizar um valor que depende
+    //do valor antigo, utilizar essa forma, onte state pega
+    //o valor anterior.
     function handleLikeCount() {
         setLikeCount((state) => {
             return state + 1;
